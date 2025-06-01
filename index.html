@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arooma Ismail Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-[#003135] lg:text-3xl hover:text-[#0FA4AF] transition-colors">
+                    Arooma Ismail Blogs
+                </a>
+            </div>
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <a href="#" class="px-3 py-2 text-[#024950] hover:text-[#0FA4AF] transition-colors rounded-md">Home</a>
+                <a href="#posts" class="px-3 py-2 text-[#024950] hover:text-[#0FA4AF] transition-colors rounded-md">Blogs</a>
+                <a href="#about" class="px-3 py-2 text-[#024950] hover:text-[#0FA4AF] transition-colors rounded-md">About</a>
+                <a href="#contact" class="px-3 py-2 text-[#024950] hover:text-[#0FA4AF] transition-colors rounded-md">Contact</a>
+                <button id="search-icon" class="text-[#024950] hover:text-[#0FA4AF] focus:outline-none p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="search-bar" class="hidden bg-gray-50 p-4 border-t border-gray-200">
+            <div class="container mx-auto">
+                <input type="text" placeholder="Search articles..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0FA4AF] text-[#003135]">
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-[#024950] text-white py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold md:text-5xl lg:text-6xl leading-tight">
+                Welcome to <span class="text-[#0FA4AF]">Arooma Ismail Blogs</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                Dive into a world of insightful perspectives, compelling stories, and fresh ideas. Your journey of discovery starts here.
+            </p>
+            <a href="#posts" class="mt-10 inline-block bg-[#0FA4AF] text-[#003135] font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-[#AFDDE5] hover:text-[#003135] transition-all duration-300 transform hover:scale-105">
+                Explore Articles
+            </a>
+        </div>
+    </section>
+
+    <main id="posts" class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-[#003135] mb-10 text-center">Latest Articles</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                <img src="https://placehold.co/600x400/0FA4AF/FFFFFF?text=Insightful+Read" alt="Blog Post Image" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-sm text-[#0FA4AF] font-semibold">INSPIRATION</span>
+                    <h3 class="mt-2 text-2xl font-bold text-[#003135] hover:text-[#0FA4AF] transition-colors">
+                        <a href="#">The Art of Storytelling in the Digital Age</a>
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-sm flex-grow">
+                        Discover how narratives shape our online experiences and learn techniques to craft compelling digital stories...
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <a href="#" class="text-[#024950] hover:text-[#0FA4AF] font-medium transition-colors">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                <img src="https://placehold.co/600x400/964734/FFFFFF?text=Tech+Trends" alt="Blog Post Image" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-sm text-[#964734] font-semibold">TECHNOLOGY</span>
+                    <h3 class="mt-2 text-2xl font-bold text-[#003135] hover:text-[#0FA4AF] transition-colors">
+                        <a href="#">Navigating the Future: AI and Creativity</a>
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-sm flex-grow">
+                        An exploration of how artificial intelligence is transforming creative fields and what it means for artists...
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <a href="#" class="text-[#024950] hover:text-[#0FA4AF] font-medium transition-colors">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                <img src="https://placehold.co/600x400/024950/AFDDE5?text=Mindfulness" alt="Blog Post Image" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-sm text-[#024950] font-semibold">WELLNESS</span>
+                    <h3 class="mt-2 text-2xl font-bold text-[#003135] hover:text-[#0FA4AF] transition-colors">
+                        <a href="#">Finding Calm in a Hectic World: A Guide</a>
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-sm flex-grow">
+                        Practical tips and techniques for incorporating mindfulness into your daily routine for a more peaceful life...
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-gray-200">
+                        <a href="#" class="text-[#024950] hover:text-[#0FA4AF] font-medium transition-colors">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="mt-12 flex justify-center">
+            <nav class="flex space-x-2" aria-label="Pagination">
+                <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-[#0FA4AF] rounded-md hover:bg-[#024950] transition-colors">1</a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-[#003135] bg-white rounded-md hover:bg-gray-50 hover:text-[#0FA4AF] transition-colors">2</a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-[#003135] bg-white rounded-md hover:bg-gray-50 hover:text-[#0FA4AF] transition-colors">3</a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-[#003135] bg-white rounded-md hover:bg-gray-50 hover:text-[#0FA4AF] transition-colors">Next &rarr;</a>
+            </nav>
+        </div>
+    </main>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-[#003135] mb-6">About Me</h2>
+            <img src="https://placehold.co/150x150/0FA4AF/FFFFFF?text=Arooma" alt="Arooma Ismail" class="w-32 h-32 rounded-full mx-auto mb-6 shadow-md">
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                This is where you can share a bit about yourself or your blog's mission. Let me know what you'd like to put here!
+                (Placeholder: Passionate writer, avid learner, and curious soul. Exploring the intersections of technology, creativity, and life.)
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16" style="background-color: #AFDDE5;"> <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-[#003135] mb-10 text-center">Get In Touch</h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-xl">
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-[#024950]">Full Name</label>
+                        <input type="text" name="name" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0FA4AF] focus:border-[#0FA4AF] sm:text-sm text-[#003135]" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-[#024950]">Email Address</label>
+                        <input type="email" name="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0FA4AF] focus:border-[#0FA4AF] sm:text-sm text-[#003135]" placeholder="you@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-[#024950]">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#0FA4AF] focus:border-[#0FA4AF] sm:text-sm text-[#003135]" placeholder="Your message..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#0FA4AF] hover:bg-[#024950] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0FA4AF] transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#003135] text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Arooma Ismail Blogs</h3>
+                    <p class="text-sm">Sharing insights and stories to inspire and inform. Your journey to discovery continues here.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-[#0FA4AF] transition-colors">Home</a></li>
+                        <li><a href="#posts" class="hover:text-[#0FA4AF] transition-colors">Blog</a></li>
+                        <li><a href="#about" class="hover:text-[#0FA4AF] transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-[#0FA4AF] transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-[#0FA4AF] transition-colors">Privacy Policy (Example)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-[#0FA4AF] transition-colors">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-[#0FA4AF] transition-colors">
+                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; <span id="currentYear"></span> Arooma Ismail Blogs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search bar toggle
+        const searchIcon = document.getElementById('search-icon');
+        const searchBar = document.getElementById('search-bar');
+        searchIcon.addEventListener('click', () => {
+            searchBar.classList.toggle('hidden');
+            if (!searchBar.classList.contains('hidden')) {
+                searchBar.querySelector('input').focus();
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Ensure target is not just "#"
+                if (targetId.length > 1) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
